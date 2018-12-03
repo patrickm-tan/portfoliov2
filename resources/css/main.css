@@ -3,8 +3,17 @@ html {
     overflow-y: hidden;
 }
 
-/* Landing Page */
+.navbar-item {
+    color: white;
+}
 
+a.navbar-item.is-active {
+    color: aqua;
+    font-weight: 500;
+}
+
+
+/* Landing  */
 #landing-page {
     background: #000;
 }
@@ -25,4 +34,21 @@ h1.subtitle {
 
 .card {
     padding: 1.5rem;
+    background-color: rgba(47, 49, 51, .5);
 }
+
+/* About me */
+#about-me {
+    background: url("../images/black-wallpaper-black-and-white-casual-11392.jpg");
+}
+
+.tile.is-child h3,
+.tile.is-child p {
+    color: white;
+}
+
+/* Case Studies */
+
+/* Resume */
+
+/* Contact */
