@@ -32,7 +32,7 @@ h1.subtitle {
     display: block;
 }
 
-.card {
+.menu-card {
     padding: 1.5rem;
     background-color: rgba(47, 49, 51, .5);
 }
@@ -52,3 +52,11 @@ h1.subtitle {
 /* Resume */
 
 /* Contact */
+#contact-card.card {
+    border-radius: 10px;
+}
+
+.card-image img {
+    height: 500px;
+    border-radius: 10px;
+}
