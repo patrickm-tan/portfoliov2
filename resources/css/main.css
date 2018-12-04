@@ -32,7 +32,6 @@ a.navbar-item.is-active {
 #landing-page,
 #contact-page,
 #resume-page,
-#aboutme-page,
 #projects-page {
     background: #000;
 }
@@ -61,7 +60,7 @@ i {
 }
 
 /* About me */
-#about-me {
+#aboutme-page {
     background: url("../images/black-wallpaper-black-and-white-casual-11392.jpg");
 }
 
@@ -73,9 +72,14 @@ i {
     color: white;
 }
 
-.subtitle strong {
+.subtitle strong,
+#aboutme-page p strong {
     color: #fcb93c;
     font-weight: 600;
+}
+
+#aboutme-page p {
+    color: white;
 }
 
 /* Case Studies */
@@ -89,5 +93,4 @@ i {
 
 .card-image img {
     height: 500px;
-    border-radius: 10px;
 }
