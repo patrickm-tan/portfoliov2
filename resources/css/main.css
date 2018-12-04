@@ -62,6 +62,7 @@ i {
 /* About me */
 #aboutme-page {
     background: url("../images/black-wallpaper-black-and-white-casual-11392.jpg");
+    background-position: calc(100% - 10px) right;
 }
 
 .tile.is-child h3 {
