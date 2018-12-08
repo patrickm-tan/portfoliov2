@@ -9,7 +9,8 @@ a {
 }
 
 a.navbar-item:hover,
-a:hover {
+a:hover,
+a h1:hover {
     background-color: transparent;
     color: #fcb93c;
 }
@@ -86,6 +87,30 @@ i {
 /* Case Studies */
 
 /* Resume */
+
+#resume-page p,
+#resume-page li {
+    color: white;
+}
+
+#resume-page h2 {
+    color: #fcb93c;
+}
+
+.skills .skill-item,
+.experience-item h1,
+.education-item h1,
+.involvement-item h1 {
+    color: #ffd97a;
+}
+
+.skills,
+.involvement,
+.experience-item,
+.skill-item {
+    padding-top: 25px;
+}
+
 
 /* Contact */
 #contact-card.card {
