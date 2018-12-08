@@ -34,12 +34,17 @@
 </head>
 
 <body>
-    <!-- Menu Will go here-->
-
     <div id="landing-page" class="hero is-fullheight is-mobile">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
+                    <div class="navbar-brand">
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
                     <div class="navbar-menu">
                         <div class="navbar-end">
                             <a class="navbar-item is-active">
@@ -75,13 +80,13 @@
                                 <h1 class="subtitle">
                                     Inspiring User Experience <strong>Researcher</strong>
                                 </h1>
-                                <a href="">
+                                <a href="https://www.linkedin.com/in/patrickmctan/" target="_blank">
                                     <i class="fab fa-linkedin-in fa-2x"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://github.com/patrickm-tan" target="_blank">
                                     <i class="fab fa-github fa-2x"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://dribbble.com/_pattytan" target="_blank">
                                     <i class="fab fa-dribbble fa-2x"></i>
                                 </a>
                             </div>
@@ -92,7 +97,7 @@
                         <div class="tile is-ancestor">
                             <a href="aboutme.html" class="tile is-parent" data-tilt>
                                 <div class="tile is-child card menu-card">
-                                    <img src="resources/images/aboutme.jpg" />
+                                    <img src="resources/images/aboutme.jpg" alt="picture of patrick" />
                                     <h3 class="title is-3">About Me</h3>
                                     <p class="subtitle is-6">
                                         Learn everything about <strong>me</strong> and what I do
@@ -101,10 +106,10 @@
                             </a>
                             <a href="projects.html" class="tile is-parent" data-tilt>
                                 <div class="tile is-child card menu-card">
-                                    <img src="resources/images/projects.jpg" />
+                                    <img src="resources/images/projects.jpg" alt="mackbook pro" />
                                     <h3 class="title is-3">Projects</h3>
                                     <p class="subtitle is-6">
-                                        View <strong>UX/UI</strong> related projects I have worked on
+                                        View <strong>Design</strong> related projects I have worked on
                                     </p>
                                 </div>
                             </a>
@@ -112,7 +117,7 @@
                         <div class="tile is-ancestor">
                             <a href="resume.html" class="tile is-parent" data-tilt>
                                 <div class="tile is-child card menu-card">
-                                    <img src="resources/images/resume.jpg" />
+                                    <img src="resources/images/resume.jpg" alt="lines of code" />
                                     <h3 class="title is-3">Resume</h3>
                                     <p class="subtitle is-6">
                                         View my <strong>Experience</strong> and <strong>Skills</strong>
@@ -121,7 +126,7 @@
                             </a>
                             <a href="contact.html" class="tile is-parent" data-tilt>
                                 <div class="tile is-child card menu-card">
-                                    <img src="resources/images/contact.jpg" />
+                                    <img src="resources/images/contact.jpg" alt="phones being shared" />
                                     <h3 class="title is-3">Contact</h3>
                                     <p class="subtitle is-6">
                                         Want to <strong>meet</strong> up?
@@ -139,8 +144,10 @@
             </div>
         </div>
 
+        <!-- scripts loaded here so website can load first-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.js"></script>
+        <script src="resources/js/mobilemenu.js"></script>
 </body>
 
 </html>

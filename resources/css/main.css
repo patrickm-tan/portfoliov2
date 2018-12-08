@@ -15,7 +15,6 @@ a h1:hover {
     color: #fcb93c;
 }
 
-/*F37335*/
 a.navbar-item.is-active {
     color: #fcb93c;
     font-weight: 500;
@@ -27,6 +26,11 @@ a.navbar-item.is-active {
 
 .hero-foot p {
     font-size: 1em;
+}
+
+.navbar-menu.is-active,
+a.navbar-item.is-active {
+    background-color: transparent;
 }
 
 /* Landing  */
@@ -62,8 +66,9 @@ i {
 
 /* About me */
 #aboutme-page {
-    background: url("../images/black-wallpaper-black-and-white-casual-11392.jpg");
-    background-position: calc(100% - 10px) right;
+    background: url("../images/about-bg.jpg") no-repeat #000;
+    background-position: right;
+    background-size: contain;
 }
 
 .tile.is-child h3 {
@@ -84,7 +89,7 @@ i {
     color: white;
 }
 
-/* Case Studies */
+/* Projects */
 
 /* Resume */
 
@@ -95,6 +100,10 @@ i {
 
 #resume-page h2 {
     color: #fcb93c;
+}
+
+h2.title.is-3 {
+    padding-top: 15px;
 }
 
 .skills .skill-item,
@@ -113,10 +122,69 @@ i {
 
 
 /* Contact */
-#contact-card.card {
-    border-radius: 10px;
+#contact-page .card.profile-picture {
+    background-color: #000;
+    box-shadow: none;
 }
 
-.card-image img {
-    height: 500px;
+#contact-page .card img {
+    border-radius: 15px;
+}
+
+.card .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    border-radius: 15px;
+}
+
+.card:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    border-radius: 15px;
+
+}
+
+.card:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+#contact-page .card {
+    border-radius: 15px;
+    background-color: #fcb93c;
+}
+
+.field {
+    padding: 10px;
+}
+
+#contact-page .card p.subtitle {
+    color: white;
 }

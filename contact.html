@@ -32,11 +32,17 @@
 </head>
 
 <body>
-    <!-- Menu Will go here-->
     <div id="contact-page" class="hero is-fullheight">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
+                    <div class="navbar-brand">
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
                     <div class="navbar-menu">
                         <div class="navbar-end">
                             <a href="index.html" class="navbar-item">
@@ -61,62 +67,65 @@
         </div>
         <div class="hero-body">
             <div class="container">
-
+                <h1 class="title">Contact</h1>
+                <h1 class="subtitle">Have ideas? Lets meet up!</h1>
                 <div class="columns">
-                    <!-- make a profile card then make a form section-->
                     <div class="column is-one-third">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="resources/images/profilepicture.jpg" alt="Placeholder image">
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content">
-                                        <p class="title is-4">Patrick Tan</p>
-                                        <p class="subtitle is-6">@patrick_tan</p>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    Have to add content here
-                                </div>
+                        <div class="card profile-picture">
+                            <div class="content-overlay"></div>
+                            <img src="resources/images/profilepicture.jpg" alt="profile picture of patrick">
+                            <div class="content-details fadeIn-top">
+                                <h1 class="title is-2">Patrick Tan</h1>
+                                <p class="subtitle is-4">(123)-456-7890
+                                    <br>
+                                    email@gmail.com
+                                    <br>
+                                    patricktandesign.com
+                                </p>
+
                             </div>
                         </div>
                     </div>
                     <div class="column is-two-thirds">
-                        <div class="field">
-                            <label class="label">Name</label>
-                            <div class="control">
-                                <input class="input" type="text" placeholder="e.g Alex Smith">
+                        <div class="card">
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="e.g Patrick Tan">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="e.g. patricktan@gmail.com">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button">Submit</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button">Cancel</button>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="field">
-                            <label class="label">Email</label>
-                            <div class="control">
-                                <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <label class="label">Message</label>
-                            <div class="control">
-                                <textarea class="textarea" placeholder="Textarea"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="field is-grouped">
-                            <div class="control">
-                                <button class="button is-link">Submit</button>
-                            </div>
-                            <div class="control">
-                                <button class="button is-text">Cancel</button>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- scripts loaded here so website can load first-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="resources/js/mobilemenu.js"></script>
 </body>
 
 </html>
