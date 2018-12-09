@@ -176,15 +176,23 @@ h2.title.is-3 {
     opacity: 1;
 }
 
-#contact-page .card {
-    border-radius: 15px;
+#contact-page .card .field input,
+#contact-page .card .field textarea {
     background-color: #fcb93c;
+    box-shadow: none;
+    border: none;
+}
+
+#contact-page .card {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .field {
     padding: 10px;
 }
 
-#contact-page .card p.subtitle {
+#contact-page .card p.subtitle,
+#contact-page .card label {
     color: white;
 }
